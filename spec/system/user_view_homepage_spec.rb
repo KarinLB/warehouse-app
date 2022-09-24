@@ -15,9 +15,9 @@ describe 'Usuario visita tela inicial' do
         #Arrange
         #cadastrar 2 galpoes: Rio e Maceio
         Warehouse.create(name: 'Rio', code: 'SDU', city: 'Rio de Janeiro', area: 60_000,
-                         address: 'Av. do Porto, 1000', cep: '20000-000', description: 'Galpão do Rio')
+                         address: 'Av. do Porto, 1000', cep: '20000000', description: 'Galpão do Rio')
         Warehouse.create(name: 'Maceio', code: 'MCZ', city: 'Maceio', area: 50_000,
-                         address: 'Av. Atlantica', cep: '80000-000', description: 'Perto do Aeroporto')
+                         address: 'Av. Atlantica', cep: '80000000', description: 'Perto do Aeroporto')
 
         #Act
         visit(root_path)
