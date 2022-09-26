@@ -19,7 +19,7 @@ describe 'Usuário vê fornecedores' do
         Supplier.create!(corporate_name: 'Unidas LTDA', brand_name: 'UNI', registration_number: '74251050000188', 
                         full_address: 'Avenida Brasil, 2000', city: 'Campinas', state: 'SP', email: 'unidas@gmail.com')
         Supplier.create!(corporate_name: 'Varejo LS LTDA', brand_name: 'VLS', registration_number: '84623950000162', 
-                            full_address: 'Avenida Afonso Pena, 1000', city: 'Belo Horizonte', state: 'MG', email: 'ls.varejo@gmail.com',)
+                            full_address: 'Avenida Afonso Pena, 1000', city: 'Belo Horizonte', state: 'MG', email: 'ls.varejo@gmail.com')
 
         #Act
         visit root_path
