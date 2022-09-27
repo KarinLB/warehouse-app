@@ -17,6 +17,7 @@ describe 'Usuário cadastra um fornecedor' do
         expect(page).to have_field('Cidade')
         expect(page).to have_field('Estado')
         expect(page).to have_field('E-mail')
+        expect(page).to have_field('Telefone')
     end
 
     it 'com sucesso' do
@@ -33,6 +34,7 @@ describe 'Usuário cadastra um fornecedor' do
         fill_in 'Cidade', with: 'Campinas'
         fill_in 'Estado', with: 'SP'
         fill_in 'E-mail', with: 'unidas@gmail.com'
+        fill_in 'Telefone', with: '40028922'
         click_on 'Enviar'
 
         #Assert
@@ -41,9 +43,10 @@ describe 'Usuário cadastra um fornecedor' do
         expect(page).to have_content('CNPJ: 74251050000188')
         expect(page).to have_content('Endereço: Avenida Brasil, 2000 - Campinas - SP')
         expect(page).to have_content('E-mail: unidas@gmail.com')
+        expect(page).to have_content('Telefone: 40028922')
     end
 
-    it '' do
+    it 'com dados incompletos' do
         #Arrange
 
         #Act
